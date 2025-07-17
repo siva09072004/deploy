@@ -6,7 +6,9 @@ export default function Home() {
   if (session){
     return(
       <>
-      <h2>sign out the page</h2>
+     <h2>name{session.user.name}</h2>
+      <h2>email{session.user.email}</h2>
+      <h2>image{session.user.image}</h2>
       <button onClick={()=>signOut()}>sign out</button>
       </>
     )
